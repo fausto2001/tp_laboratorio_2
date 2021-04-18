@@ -1,0 +1,13 @@
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\bin\Debug\netcoreapp3.1\Prueba.exe
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\bin\Debug\netcoreapp3.1\Prueba.deps.json
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\bin\Debug\netcoreapp3.1\Prueba.runtimeconfig.json
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\bin\Debug\netcoreapp3.1\Prueba.runtimeconfig.dev.json
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\bin\Debug\netcoreapp3.1\Prueba.dll
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\bin\Debug\netcoreapp3.1\Prueba.pdb
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.csprojAssemblyReference.cache
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.csproj.CoreCompileInputs.cache
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.AssemblyInfoInputs.cache
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.AssemblyInfo.cs
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.dll
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.pdb
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\Prueba\obj\Debug\netcoreapp3.1\Prueba.genruntimeconfig.cache

@@ -1,0 +1,13 @@
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.exe
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.deps.json
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.json
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.dev.json
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csprojAssemblyReference.cache
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfoInputs.cache
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfo.cs
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\programacion II - 1 2021\programacion\tp 1\Entidades\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.genruntimeconfig.cache
