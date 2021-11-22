@@ -108,7 +108,8 @@ namespace Entidades
 
         /// <summary>
         /// Sobrecarga de + verifica que el elemento recibido no exista ya en la lista, y la capacidad máxima no sea menor a la
-        /// cantidad de elementos que hay, y lo agrega si es así.
+        /// cantidad de elementos que hay, y lo agrega si es así. Si la capacadiad máxima es menor a la cantidad de elementos que
+        /// hay, tiro una exception de tipo ListaLlenaException.
         /// </summary>
         /// <param name="l"></param>
         /// <param name="a"></param>
@@ -129,7 +130,7 @@ namespace Entidades
             }
             else
             {
-                return false;
+                throw new ListaLlenaException();
             }
         }
 

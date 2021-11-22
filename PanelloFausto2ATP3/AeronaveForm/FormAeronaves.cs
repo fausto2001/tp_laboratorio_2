@@ -29,12 +29,16 @@ namespace AeronaveForm
         private string aux;
 
         /// <summary>
-        /// Al comenzar el programa, se crea una lista de aeronaves con una capacidad por defecto de 50.
+        /// Al comenzar el programa, se crea una lista de aeronaves con una capacidad por defecto de 50, y trae los datos de las
+        /// aeronaves que haya en un servidor SQL.
         /// </summary>
         public FormAeronaves()
         {
             MiLista = new Lista<Aeronave>(50);
+            AccesoDatos accesoDatos = new AccesoDatos();
+            MiLista = accesoDatos.TraerDatos();
             InitializeComponent();
+            CargarLista();
         }
 
         /// <summary>
@@ -78,12 +82,14 @@ namespace AeronaveForm
         /// en la función ShowDialog. Si el nuevo listaFile no se puede cargar, entonces vuelvo a sobrescribir los datos de la
         /// variable con los que estaban previamente en el aux. Si no hay problema con eso, pregunta al usuario si desea cargar,
         /// y si acepta, finalmente llama a la función Load de la clase genérica Lista. Si todo funciona bien, llama a CargarLista,
-        /// sino, se muestra un mensaje de error.
+        /// sino, se muestra un mensaje de error. Si se puede cargar todo, entonces se agregan a la base de datos SQL todas las
+        /// aeronaves cargadas.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void BtnCargar_Click(object sender, EventArgs e)
         {
+            AccesoDatos accesoDatos = new AccesoDatos();
             OpenFileDialog fd = new OpenFileDialog();
 
             fd.ShowDialog();
@@ -97,6 +103,23 @@ namespace AeronaveForm
                 if (MessageBox.Show("Desea Cargar?", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
                     string load = MiLista.Load(listaFile, 50, out MiLista);
+
+                    foreach(Aeronave aeronave in MiLista.Elementos)
+                    {
+                        if(aeronave is Avion)
+                        {
+                            accesoDatos.AgregarAvion((Avion)aeronave);
+                        }
+                        else if(aeronave is Helicoptero)
+                        {
+                            accesoDatos.AgregarHelicoptero((Helicoptero)aeronave);
+                        }
+                        else
+                        {
+                            accesoDatos.AgregarGlobo((Globo)aeronave);
+                        }
+                    }
+
                     if (load == "")
                     {
                         CargarLista();
@@ -170,6 +193,7 @@ namespace AeronaveForm
         /// que ponga Yes, busca la aeronave en el índice seleccionado de la listBox, y la remueve con la función Remover de la
         /// clase genérica MiLista. Luego llama a la función CargarLista para poder remover todos los ítems de la listbox, y se
         /// informa al usuario que está sin guardar si había una lista previamente cargada, agregándolo en el título del form.
+        /// Si se puede eliminar, elimina de SQL la aeronave elegida.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -182,6 +206,21 @@ namespace AeronaveForm
                 {
                     Aeronave aeronave = MiLista.Elementos[LBAeronaves.SelectedIndex];
                     this.MiLista.Remover(aeronave);
+                    AccesoDatos accesoDatos = new AccesoDatos();
+
+                    if(aeronave is Avion)
+                    {
+                        accesoDatos.EliminarAvion(aeronave.Modelo);
+                    }
+                    else if(aeronave is Helicoptero)
+                    {
+                        accesoDatos.EliminarHelicoptero(aeronave.Modelo);
+                    }
+                    else
+                    {
+                        accesoDatos.EliminarGlobo(aeronave.Modelo);
+                    }
+
                     CargarLista();
                     if(listaFile is not null)
                     {
@@ -267,6 +306,7 @@ namespace AeronaveForm
             if(MiLista.Elementos.Count > 1)
             { 
                 FormAnalisis formAnalisis = new FormAnalisis(MiLista);
+                formAnalisis.Enabled = true;
                 formAnalisis.ShowDialog();
             }
             else
@@ -274,6 +314,11 @@ namespace AeronaveForm
                 MessageBox.Show("Debe agregar al menos dos elementos en la lista", "Atencion",
                     MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+        }
+
+        private void traerDatos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -27,10 +27,7 @@ namespace UnitTest
 
             Assert.False(rta);
         }
-    }
 
-    public class ListaTest
-    {
         [Fact]
 
         public void VerificarAgregar_true()
@@ -51,10 +48,10 @@ namespace UnitTest
         public void VerificarAgregar_false()
         {
             Aeronave a1 = new Aeronave("Cessna", "172", 302, 18500, 757, 15, 11, 1955);
-            Aeronave a2 = new Aeronave("Cessna", "152", 204, 14000, 490, 14, 10, 1977);
-            Aeronave a3 = new Aeronave("Diamond", "DA40", 216, 12250, 552, 13, 13, 1996);
+            Aeronave a2 = new Aeronave("Cessna", "172", 302, 18500, 757, 15, 11, 1955);
+            Aeronave a3 = new Aeronave("Cessna", "172", 302, 18500, 757, 15, 11, 1955);
 
-            Lista<Aeronave> MiLista = new Lista<Aeronave>(2);
+            Lista<Aeronave> MiLista = new Lista<Aeronave>(5);
 
             MiLista.Agregar(a1);
             MiLista.Agregar(a2);
@@ -70,7 +67,7 @@ namespace UnitTest
             Aeronave a3 = new Aeronave("Diamond", "DA40", 216, 12250, 552, 13, 13, 1996);
 
 
-            Lista<Aeronave> MiLista = new Lista<Aeronave>(2);
+            Lista<Aeronave> MiLista = new Lista<Aeronave>(4);
 
             MiLista.Agregar(a1);
             MiLista.Agregar(a2);

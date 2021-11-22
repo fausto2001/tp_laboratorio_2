@@ -76,6 +76,10 @@ namespace AeronaveForm
             this.lblPesoGlobos = new System.Windows.Forms.Label();
             this.lblAlturaMaximaGlobos = new System.Windows.Forms.Label();
             this.lblVelocidadMaximaGlobos = new System.Windows.Forms.Label();
+            this.lblSonido = new System.Windows.Forms.Label();
+            this.lblPesoTonelada = new System.Windows.Forms.Label();
+            this.lblGlobosPorcentaje = new System.Windows.Forms.Label();
+            this.btnCarrera = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblVelocidadMaxima
@@ -327,7 +331,7 @@ namespace AeronaveForm
             // 
             this.lblHelicopteros.AutoSize = true;
             this.lblHelicopteros.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHelicopteros.Location = new System.Drawing.Point(244, 245);
+            this.lblHelicopteros.Location = new System.Drawing.Point(244, 268);
             this.lblHelicopteros.Name = "lblHelicopteros";
             this.lblHelicopteros.Size = new System.Drawing.Size(94, 20);
             this.lblHelicopteros.TabIndex = 25;
@@ -338,7 +342,7 @@ namespace AeronaveForm
             // 
             this.lblAviones.AutoSize = true;
             this.lblAviones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAviones.Location = new System.Drawing.Point(509, 245);
+            this.lblAviones.Location = new System.Drawing.Point(509, 268);
             this.lblAviones.Name = "lblAviones";
             this.lblAviones.Size = new System.Drawing.Size(61, 20);
             this.lblAviones.TabIndex = 26;
@@ -349,7 +353,7 @@ namespace AeronaveForm
             // 
             this.lblGlobos.AutoSize = true;
             this.lblGlobos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblGlobos.Location = new System.Drawing.Point(776, 245);
+            this.lblGlobos.Location = new System.Drawing.Point(776, 268);
             this.lblGlobos.Name = "lblGlobos";
             this.lblGlobos.Size = new System.Drawing.Size(56, 20);
             this.lblGlobos.TabIndex = 27;
@@ -360,7 +364,7 @@ namespace AeronaveForm
             // 
             this.lblAnchoPromedio.AutoSize = true;
             this.lblAnchoPromedio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAnchoPromedio.Location = new System.Drawing.Point(3, 419);
+            this.lblAnchoPromedio.Location = new System.Drawing.Point(3, 442);
             this.lblAnchoPromedio.Name = "lblAnchoPromedio";
             this.lblAnchoPromedio.Size = new System.Drawing.Size(123, 20);
             this.lblAnchoPromedio.TabIndex = 32;
@@ -370,7 +374,7 @@ namespace AeronaveForm
             // 
             this.lblLargoPromedio.AutoSize = true;
             this.lblLargoPromedio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLargoPromedio.Location = new System.Drawing.Point(3, 388);
+            this.lblLargoPromedio.Location = new System.Drawing.Point(3, 411);
             this.lblLargoPromedio.Name = "lblLargoPromedio";
             this.lblLargoPromedio.Size = new System.Drawing.Size(119, 20);
             this.lblLargoPromedio.TabIndex = 31;
@@ -380,7 +384,7 @@ namespace AeronaveForm
             // 
             this.lblPesoPromedio.AutoSize = true;
             this.lblPesoPromedio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPesoPromedio.Location = new System.Drawing.Point(3, 358);
+            this.lblPesoPromedio.Location = new System.Drawing.Point(3, 381);
             this.lblPesoPromedio.Name = "lblPesoPromedio";
             this.lblPesoPromedio.Size = new System.Drawing.Size(111, 20);
             this.lblPesoPromedio.TabIndex = 30;
@@ -390,7 +394,7 @@ namespace AeronaveForm
             // 
             this.lblAlturaMaximaPromedio.AutoSize = true;
             this.lblAlturaMaximaPromedio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAlturaMaximaPromedio.Location = new System.Drawing.Point(3, 328);
+            this.lblAlturaMaximaPromedio.Location = new System.Drawing.Point(3, 351);
             this.lblAlturaMaximaPromedio.Name = "lblAlturaMaximaPromedio";
             this.lblAlturaMaximaPromedio.Size = new System.Drawing.Size(178, 20);
             this.lblAlturaMaximaPromedio.TabIndex = 29;
@@ -400,7 +404,7 @@ namespace AeronaveForm
             // 
             this.lblVelocidadMaximaPromedio.AutoSize = true;
             this.lblVelocidadMaximaPromedio.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVelocidadMaximaPromedio.Location = new System.Drawing.Point(3, 298);
+            this.lblVelocidadMaximaPromedio.Location = new System.Drawing.Point(3, 321);
             this.lblVelocidadMaximaPromedio.Name = "lblVelocidadMaximaPromedio";
             this.lblVelocidadMaximaPromedio.Size = new System.Drawing.Size(208, 20);
             this.lblVelocidadMaximaPromedio.TabIndex = 28;
@@ -410,7 +414,7 @@ namespace AeronaveForm
             // 
             this.lblAnchoHelicopteros.AutoSize = true;
             this.lblAnchoHelicopteros.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAnchoHelicopteros.Location = new System.Drawing.Point(262, 419);
+            this.lblAnchoHelicopteros.Location = new System.Drawing.Point(262, 442);
             this.lblAnchoHelicopteros.Name = "lblAnchoHelicopteros";
             this.lblAnchoHelicopteros.Size = new System.Drawing.Size(17, 20);
             this.lblAnchoHelicopteros.TabIndex = 37;
@@ -422,7 +426,7 @@ namespace AeronaveForm
             // 
             this.lblLargoHelicopteros.AutoSize = true;
             this.lblLargoHelicopteros.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLargoHelicopteros.Location = new System.Drawing.Point(262, 388);
+            this.lblLargoHelicopteros.Location = new System.Drawing.Point(262, 411);
             this.lblLargoHelicopteros.Name = "lblLargoHelicopteros";
             this.lblLargoHelicopteros.Size = new System.Drawing.Size(17, 20);
             this.lblLargoHelicopteros.TabIndex = 36;
@@ -434,7 +438,7 @@ namespace AeronaveForm
             // 
             this.lblPesoHelicopteros.AutoSize = true;
             this.lblPesoHelicopteros.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPesoHelicopteros.Location = new System.Drawing.Point(262, 358);
+            this.lblPesoHelicopteros.Location = new System.Drawing.Point(262, 381);
             this.lblPesoHelicopteros.Name = "lblPesoHelicopteros";
             this.lblPesoHelicopteros.Size = new System.Drawing.Size(17, 20);
             this.lblPesoHelicopteros.TabIndex = 35;
@@ -445,7 +449,7 @@ namespace AeronaveForm
             // 
             this.lblAlturaMaximaHelicopteros.AutoSize = true;
             this.lblAlturaMaximaHelicopteros.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAlturaMaximaHelicopteros.Location = new System.Drawing.Point(262, 328);
+            this.lblAlturaMaximaHelicopteros.Location = new System.Drawing.Point(262, 351);
             this.lblAlturaMaximaHelicopteros.Name = "lblAlturaMaximaHelicopteros";
             this.lblAlturaMaximaHelicopteros.Size = new System.Drawing.Size(17, 20);
             this.lblAlturaMaximaHelicopteros.TabIndex = 34;
@@ -457,7 +461,7 @@ namespace AeronaveForm
             // 
             this.lblVelocidadMaximaHelicopteros.AutoSize = true;
             this.lblVelocidadMaximaHelicopteros.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVelocidadMaximaHelicopteros.Location = new System.Drawing.Point(262, 298);
+            this.lblVelocidadMaximaHelicopteros.Location = new System.Drawing.Point(262, 321);
             this.lblVelocidadMaximaHelicopteros.Name = "lblVelocidadMaximaHelicopteros";
             this.lblVelocidadMaximaHelicopteros.Size = new System.Drawing.Size(17, 20);
             this.lblVelocidadMaximaHelicopteros.TabIndex = 33;
@@ -469,7 +473,7 @@ namespace AeronaveForm
             // 
             this.lblAnchoAviones.AutoSize = true;
             this.lblAnchoAviones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAnchoAviones.Location = new System.Drawing.Point(509, 419);
+            this.lblAnchoAviones.Location = new System.Drawing.Point(509, 442);
             this.lblAnchoAviones.Name = "lblAnchoAviones";
             this.lblAnchoAviones.Size = new System.Drawing.Size(17, 20);
             this.lblAnchoAviones.TabIndex = 43;
@@ -481,7 +485,7 @@ namespace AeronaveForm
             // 
             this.lblLargoAviones.AutoSize = true;
             this.lblLargoAviones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLargoAviones.Location = new System.Drawing.Point(509, 388);
+            this.lblLargoAviones.Location = new System.Drawing.Point(509, 411);
             this.lblLargoAviones.Name = "lblLargoAviones";
             this.lblLargoAviones.Size = new System.Drawing.Size(17, 20);
             this.lblLargoAviones.TabIndex = 42;
@@ -493,7 +497,7 @@ namespace AeronaveForm
             // 
             this.lblPesoAviones.AutoSize = true;
             this.lblPesoAviones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPesoAviones.Location = new System.Drawing.Point(509, 358);
+            this.lblPesoAviones.Location = new System.Drawing.Point(509, 381);
             this.lblPesoAviones.Name = "lblPesoAviones";
             this.lblPesoAviones.Size = new System.Drawing.Size(17, 20);
             this.lblPesoAviones.TabIndex = 41;
@@ -504,7 +508,7 @@ namespace AeronaveForm
             // 
             this.lblAlturaMaximaAviones.AutoSize = true;
             this.lblAlturaMaximaAviones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAlturaMaximaAviones.Location = new System.Drawing.Point(509, 328);
+            this.lblAlturaMaximaAviones.Location = new System.Drawing.Point(509, 351);
             this.lblAlturaMaximaAviones.Name = "lblAlturaMaximaAviones";
             this.lblAlturaMaximaAviones.Size = new System.Drawing.Size(17, 20);
             this.lblAlturaMaximaAviones.TabIndex = 40;
@@ -516,7 +520,7 @@ namespace AeronaveForm
             // 
             this.lblVelocidadMaximaAviones.AutoSize = true;
             this.lblVelocidadMaximaAviones.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVelocidadMaximaAviones.Location = new System.Drawing.Point(509, 298);
+            this.lblVelocidadMaximaAviones.Location = new System.Drawing.Point(509, 321);
             this.lblVelocidadMaximaAviones.Name = "lblVelocidadMaximaAviones";
             this.lblVelocidadMaximaAviones.Size = new System.Drawing.Size(17, 20);
             this.lblVelocidadMaximaAviones.TabIndex = 39;
@@ -528,7 +532,7 @@ namespace AeronaveForm
             // 
             this.lblAnchoGlobos.AutoSize = true;
             this.lblAnchoGlobos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAnchoGlobos.Location = new System.Drawing.Point(776, 419);
+            this.lblAnchoGlobos.Location = new System.Drawing.Point(776, 442);
             this.lblAnchoGlobos.Name = "lblAnchoGlobos";
             this.lblAnchoGlobos.Size = new System.Drawing.Size(17, 20);
             this.lblAnchoGlobos.TabIndex = 48;
@@ -540,7 +544,7 @@ namespace AeronaveForm
             // 
             this.lblLargoGlobos.AutoSize = true;
             this.lblLargoGlobos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLargoGlobos.Location = new System.Drawing.Point(776, 388);
+            this.lblLargoGlobos.Location = new System.Drawing.Point(776, 411);
             this.lblLargoGlobos.Name = "lblLargoGlobos";
             this.lblLargoGlobos.Size = new System.Drawing.Size(17, 20);
             this.lblLargoGlobos.TabIndex = 47;
@@ -552,7 +556,7 @@ namespace AeronaveForm
             // 
             this.lblPesoGlobos.AutoSize = true;
             this.lblPesoGlobos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPesoGlobos.Location = new System.Drawing.Point(776, 358);
+            this.lblPesoGlobos.Location = new System.Drawing.Point(776, 381);
             this.lblPesoGlobos.Name = "lblPesoGlobos";
             this.lblPesoGlobos.Size = new System.Drawing.Size(17, 20);
             this.lblPesoGlobos.TabIndex = 46;
@@ -563,7 +567,7 @@ namespace AeronaveForm
             // 
             this.lblAlturaMaximaGlobos.AutoSize = true;
             this.lblAlturaMaximaGlobos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAlturaMaximaGlobos.Location = new System.Drawing.Point(776, 328);
+            this.lblAlturaMaximaGlobos.Location = new System.Drawing.Point(776, 351);
             this.lblAlturaMaximaGlobos.Name = "lblAlturaMaximaGlobos";
             this.lblAlturaMaximaGlobos.Size = new System.Drawing.Size(17, 20);
             this.lblAlturaMaximaGlobos.TabIndex = 45;
@@ -575,7 +579,7 @@ namespace AeronaveForm
             // 
             this.lblVelocidadMaximaGlobos.AutoSize = true;
             this.lblVelocidadMaximaGlobos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVelocidadMaximaGlobos.Location = new System.Drawing.Point(776, 298);
+            this.lblVelocidadMaximaGlobos.Location = new System.Drawing.Point(776, 321);
             this.lblVelocidadMaximaGlobos.Name = "lblVelocidadMaximaGlobos";
             this.lblVelocidadMaximaGlobos.Size = new System.Drawing.Size(17, 20);
             this.lblVelocidadMaximaGlobos.TabIndex = 44;
@@ -583,11 +587,55 @@ namespace AeronaveForm
             this.lblVelocidadMaximaGlobos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblVelocidadMaximaGlobos.Visible = false;
             // 
+            // lblSonido
+            // 
+            this.lblSonido.AutoSize = true;
+            this.lblSonido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSonido.Location = new System.Drawing.Point(3, 499);
+            this.lblSonido.Name = "lblSonido";
+            this.lblSonido.Size = new System.Drawing.Size(392, 20);
+            this.lblSonido.TabIndex = 49;
+            this.lblSonido.Text = "El de las aeronaves puede viajar a la velocidad del sonido";
+            // 
+            // lblPesoTonelada
+            // 
+            this.lblPesoTonelada.AutoSize = true;
+            this.lblPesoTonelada.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPesoTonelada.Location = new System.Drawing.Point(3, 532);
+            this.lblPesoTonelada.Name = "lblPesoTonelada";
+            this.lblPesoTonelada.Size = new System.Drawing.Size(300, 20);
+            this.lblPesoTonelada.TabIndex = 50;
+            this.lblPesoTonelada.Text = "El de las aeronaves pesa más de 1 tonelada.";
+            // 
+            // lblGlobosPorcentaje
+            // 
+            this.lblGlobosPorcentaje.AutoSize = true;
+            this.lblGlobosPorcentaje.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblGlobosPorcentaje.Location = new System.Drawing.Point(3, 564);
+            this.lblGlobosPorcentaje.Name = "lblGlobosPorcentaje";
+            this.lblGlobosPorcentaje.Size = new System.Drawing.Size(212, 20);
+            this.lblGlobosPorcentaje.TabIndex = 51;
+            this.lblGlobosPorcentaje.Text = "El de las aeronaves son globos";
+            // 
+            // btnCarrera
+            // 
+            this.btnCarrera.Location = new System.Drawing.Point(12, 202);
+            this.btnCarrera.Name = "btnCarrera";
+            this.btnCarrera.Size = new System.Drawing.Size(169, 23);
+            this.btnCarrera.TabIndex = 52;
+            this.btnCarrera.Text = "Comparacion en vivo";
+            this.btnCarrera.UseVisualStyleBackColor = true;
+            this.btnCarrera.Click += new System.EventHandler(this.btnCarrera_Click);
+            // 
             // FormAnalisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 569);
+            this.ClientSize = new System.Drawing.Size(956, 663);
+            this.Controls.Add(this.btnCarrera);
+            this.Controls.Add(this.lblGlobosPorcentaje);
+            this.Controls.Add(this.lblPesoTonelada);
+            this.Controls.Add(this.lblSonido);
             this.Controls.Add(this.lblAnchoGlobos);
             this.Controls.Add(this.lblLargoGlobos);
             this.Controls.Add(this.lblPesoGlobos);
@@ -634,6 +682,7 @@ namespace AeronaveForm
             this.Controls.Add(this.lblPeso);
             this.Controls.Add(this.lblAlturaMaxima);
             this.Controls.Add(this.lblVelocidadMaxima);
+            this.Enabled = false;
             this.Name = "FormAnalisis";
             this.Text = "FormAnalisis";
             this.ResumeLayout(false);
@@ -688,5 +737,9 @@ namespace AeronaveForm
         private System.Windows.Forms.Label lblPesoGlobos;
         private System.Windows.Forms.Label lblAlturaMaximaGlobos;
         private System.Windows.Forms.Label lblVelocidadMaximaGlobos;
+        private System.Windows.Forms.Label lblSonido;
+        private System.Windows.Forms.Label lblPesoTonelada;
+        private System.Windows.Forms.Label lblGlobosPorcentaje;
+        private System.Windows.Forms.Button btnCarrera;
     }
 }

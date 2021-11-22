@@ -36,6 +36,7 @@ namespace AeronaveForm
         private EAvion tipo;
         private int capacidadAire;
         private int pasajeros;
+        public EModo modo2;
 
         //Creo una aeronave.
         public Aeronave aeronave;
@@ -63,7 +64,8 @@ namespace AeronaveForm
         {
             InitializeComponent();
             if (modo == EModo.Agregar)
-            { 
+            {
+                modo2 = EModo.Agregar;
                 CMBAeronave.SelectedIndex = 0;
                 HideAvion();
                 HideGlobo();
@@ -71,6 +73,7 @@ namespace AeronaveForm
             }
             else
             {
+                modo2 = EModo.Modificar;
                 this.aeronave = aeronave;
                 if(aeronave is Helicoptero)
                 {
@@ -448,7 +451,7 @@ namespace AeronaveForm
         /// que corresponden a las de todas las aeronaves, son igualadas a las que el usuario escribió. Luego se verifican las variables
         /// de texto particulares de cada aeronave (por ejemplo, los rotores de un helicóptero), y una vez que está todo verificado,
         /// se crea una nueva aeronave del tipo indicado, y la variable BSave a true, para luego poder informar al usuario que están
-        /// los nuevos datos sin guardar.
+        /// los nuevos datos sin guardar. También agrega o modifica a SQL.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -507,6 +510,16 @@ namespace AeronaveForm
                 aeronave = new Helicoptero(marca, modelo, velocidadMaxima, alturaMaxima, peso, largo,
                     ancho, anio, rotores, tipoHelicoptero);
                 BSave = true;
+
+                AccesoDatos accesoDatos = new AccesoDatos();
+                if (modo2 == EModo.Agregar)
+                {
+                    accesoDatos.AgregarHelicoptero((Helicoptero)aeronave);
+                }
+                else
+                {
+                    accesoDatos.ModificarHelicoptero((Helicoptero)aeronave);
+                }
             }
 
             else if(CMBAeronave.SelectedIndex == 1)
@@ -516,6 +529,16 @@ namespace AeronaveForm
                 aeronave = new Avion(marca, modelo, velocidadMaxima, alturaMaxima, peso, largo, ancho,
                     anio, tipo, motores);
                 BSave = true;
+
+                AccesoDatos accesoDatos = new AccesoDatos();
+                if (modo2 == EModo.Agregar)
+                {
+                    accesoDatos.AgregarAvion((Avion)aeronave);
+                }
+                else
+                {
+                    accesoDatos.ModificarAvion((Avion)aeronave);
+                }
             }
 
             else if(CMBAeronave.SelectedIndex == 2)
@@ -541,6 +564,16 @@ namespace AeronaveForm
 
                 aeronave = new Globo(marca, modelo, velocidadMaxima, alturaMaxima, peso, largo, ancho,
                     anio, capacidadAire, pasajeros);
+                AccesoDatos accesoDatos = new AccesoDatos();
+                if(modo2 == EModo.Agregar)
+                {
+                    accesoDatos.AgregarGlobo((Globo)aeronave);
+                }
+                else
+                {
+                    accesoDatos.ModificarGlobo((Globo)aeronave);
+                }
+
                 BSave = true;
             }
             this.Close();

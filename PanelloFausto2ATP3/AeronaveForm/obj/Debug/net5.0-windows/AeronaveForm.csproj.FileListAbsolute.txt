@@ -21,3 +21,10 @@ F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\obj\D
 F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\obj\Debug\net5.0-windows\AeronaveForm.genruntimeconfig.cache
 F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\obj\Debug\net5.0-windows\AeronaveForm.FormAgregarModificar.resources
 F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\obj\Debug\net5.0-windows\AeronaveForm.FormAnalisis.resources
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\obj\Debug\net5.0-windows\AeronaveForm.FormCarrera.resources
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\AeronaveForm\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

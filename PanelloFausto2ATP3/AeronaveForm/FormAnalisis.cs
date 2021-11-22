@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+using System.Threading;
 
 namespace AeronaveForm
 {
@@ -97,7 +98,7 @@ namespace AeronaveForm
 
             lblLargo1.Text = Convert.ToString(listaAnalisis.Elementos[index1].Largo) + " m";
             lblLargo2.Text = Convert.ToString(listaAnalisis.Elementos[index2].Largo) + " m";
-            lblResLargo.Text = Convert.ToString(listaAnalisis.Elementos[index1].Largo - listaAnalisis.Elementos[index2].Largo) + "m";
+            lblResLargo.Text = Convert.ToString(System.Math.Round(listaAnalisis.Elementos[index1].Largo - listaAnalisis.Elementos[index2].Largo, 2)) + "m";
             if (lblResLargo.Text.Contains('-'))
             {
                 lblResLargo.ForeColor = Color.Red;
@@ -109,7 +110,7 @@ namespace AeronaveForm
 
             lblAncho1.Text = Convert.ToString(listaAnalisis.Elementos[index1].Ancho) + " m";
             lblAncho2.Text = Convert.ToString(listaAnalisis.Elementos[index2].Ancho) + " m";
-            lblResAncho.Text = Convert.ToString(listaAnalisis.Elementos[index1].Ancho - listaAnalisis.Elementos[index2].Ancho) + "m";
+            lblResAncho.Text = Convert.ToString(System.Math.Round(listaAnalisis.Elementos[index1].Ancho - listaAnalisis.Elementos[index2].Ancho, 2)) + "m";
             if (lblResAncho.Text.Contains('-'))
             {
                 lblResAncho.ForeColor = Color.Red;
@@ -120,6 +121,10 @@ namespace AeronaveForm
             }
         }
 
+        /// <summary>
+        /// Calcula los promedios de todas las aeronaves.
+        /// </summary>
+        /// <param name="listaAnalisis"></param>
         private void Promedios(Lista<Aeronave> listaAnalisis)
         {
             float VMHelicopteros = 0;
@@ -143,9 +148,23 @@ namespace AeronaveForm
             int countHelicoptero = 0;
             int countAvion = 0;
             int countGlobo = 0;
+
+            int countVSonido = 0;
+            int countTonelada = 0;
+
             foreach(Aeronave a in listaAnalisis.Elementos)
             {
-                if(a is Helicoptero)
+                if (a.VelocidadMaxima > 1225)
+                {
+                    countVSonido++;
+                }
+
+                if(a.Peso > 1000)
+                {
+                    countTonelada++;
+                }
+
+                if (a is Helicoptero)
                 {
                     countHelicoptero++;
                     VMHelicopteros = (VMHelicopteros + (float)a.VelocidadMaxima) / countHelicoptero;
@@ -153,7 +172,6 @@ namespace AeronaveForm
                     PHelicopteros = (PHelicopteros + (float)a.Peso) / countHelicoptero;
                     LHelicopteros = (LHelicopteros + (float)a.Largo) / countHelicoptero;
                     AHelicopteros = (AHelicopteros + (float)a.Ancho) / countHelicoptero;
-
                 }
                 else if (a is Avion)
                 {
@@ -183,11 +201,11 @@ namespace AeronaveForm
                 lblAnchoHelicopteros.Visible = true;
                 lblLargoHelicopteros.Visible = true;
 
-                lblVelocidadMaximaHelicopteros.Text = Convert.ToString(VMHelicopteros) + " km/h";
-                lblAlturaMaximaHelicopteros.Text = Convert.ToString(AMHelicopteros) + " m";
-                lblPesoHelicopteros.Text = Convert.ToString(PHelicopteros) + " kg";
-                lblAnchoHelicopteros.Text = Convert.ToString(AHelicopteros) + " m";
-                lblLargoHelicopteros.Text = Convert.ToString(LHelicopteros) + " m";
+                lblVelocidadMaximaHelicopteros.Text = Convert.ToString(System.Math.Round(VMHelicopteros, 2)) + " km/h";
+                lblAlturaMaximaHelicopteros.Text = Convert.ToString(System.Math.Round(AMHelicopteros, 2)) + " m";
+                lblPesoHelicopteros.Text = Convert.ToString(System.Math.Round(PHelicopteros, 2)) + " kg";
+                lblAnchoHelicopteros.Text = Convert.ToString(System.Math.Round(AHelicopteros, 2)) + " m";
+                lblLargoHelicopteros.Text = Convert.ToString(System.Math.Round(LHelicopteros, 2)) + " m";
             }
             else
             {
@@ -202,11 +220,11 @@ namespace AeronaveForm
                 lblAnchoAviones.Visible = true;
                 lblLargoAviones.Visible = true;
 
-                lblVelocidadMaximaAviones.Text = Convert.ToString(VMAviones) + " km/h";
-                lblAlturaMaximaAviones.Text = Convert.ToString(AMAviones) + " m";
-                lblPesoAviones.Text = Convert.ToString(PAviones) + " kg";
-                lblAnchoAviones.Text = Convert.ToString(AAviones) + " m";
-                lblLargoAviones.Text = Convert.ToString(LAviones) + " m";
+                lblVelocidadMaximaAviones.Text = Convert.ToString(System.Math.Round(VMAviones, 2)) + " km/h";
+                lblAlturaMaximaAviones.Text = Convert.ToString(System.Math.Round(AMAviones, 2)) + " m";
+                lblPesoAviones.Text = Convert.ToString(System.Math.Round(PAviones, 2)) + " kg";
+                lblAnchoAviones.Text = Convert.ToString(System.Math.Round(AAviones, 2)) + " m";
+                lblLargoAviones.Text = Convert.ToString(System.Math.Round(LAviones, 2)) + " m";
             }
             else
             {
@@ -221,19 +239,42 @@ namespace AeronaveForm
                 lblAnchoGlobos.Visible = true;
                 lblLargoGlobos.Visible = true;
 
-                lblVelocidadMaximaGlobos.Text = Convert.ToString(VMGlobos) + " km/h";
-                lblAlturaMaximaGlobos.Text = Convert.ToString(AMGlobos) + " m";
-                lblPesoGlobos.Text = Convert.ToString(PGlobos) + " kg";
-                lblAnchoGlobos.Text = Convert.ToString(AGlobos) + " m";
-                lblLargoGlobos.Text = Convert.ToString(LGlobos) + " m";
+                lblVelocidadMaximaGlobos.Text = Convert.ToString(System.Math.Round(VMGlobos, 2)) + " km/h";
+                lblAlturaMaximaGlobos.Text = Convert.ToString(System.Math.Round(AMGlobos, 2)) + " m";
+                lblPesoGlobos.Text = Convert.ToString(System.Math.Round(PGlobos, 2)) + " kg";
+                lblAnchoGlobos.Text = Convert.ToString(System.Math.Round(AGlobos, 2)) + " m";
+                lblLargoGlobos.Text = Convert.ToString(System.Math.Round(LGlobos, 2)) + " m";
             }
             else
             {
                 lblPesoGlobos.Text = "No hay globos";
             }
+            
+            float porcentajeSonido = ((float)countVSonido / (float)listaAnalisis.Elementos.Count) * 100;
+            float porcentajeTonelada = ((float)countTonelada / (float)listaAnalisis.Elementos.Count) * 100;
+            float porcentajeGlobos = ((float)countGlobo / (float)listaAnalisis.Elementos.Count) * 100;
 
+            //Algunos datos extra!
+            lblSonido.Text = "El " + System.Math.Round(porcentajeSonido, 2) + " % de las aeronaves puede viajar a la velocidad del sonido.";
+            lblPesoTonelada.Text = "El " + System.Math.Round(porcentajeTonelada, 2) + " % de las aeronaves pesa más de una tonelada.";
+            lblGlobosPorcentaje.Text = "El " + System.Math.Round(porcentajeGlobos, 2) + " % de las aeronaves son globos.";
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+        }
 
+        /// <summary>
+        /// Obtiene los indices de las aeronaves, y manda las mismas al FormCarrera.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCarrera_Click(object sender, EventArgs e)
+        {
+            int index1 = cmbAeronaves1.SelectedIndex;
+            int index2 = cmbAeronaves2.SelectedIndex;
+            FormCarrera formCarrera = new FormCarrera(listaAnalisis.Elementos[index1], listaAnalisis.Elementos[index2]);
+            formCarrera.ShowDialog();
+        }
     }
 }
