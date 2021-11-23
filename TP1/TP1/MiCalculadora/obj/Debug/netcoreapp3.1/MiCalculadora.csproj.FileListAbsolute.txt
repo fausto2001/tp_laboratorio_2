@@ -1,0 +1,39 @@
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.exe
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.deps.json
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.json
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.dev.json
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.AssemblyReference.cache
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.FormCalculadora.resources
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.GenerateResource.cache
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfoInputs.cache
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfo.cs
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CopyComplete
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.genruntimeconfig.cache
+C:\Users\demia\source\repos\TP1\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.Properties.Resources.resources
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.exe
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.deps.json
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.json
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.runtimeconfig.dev.json
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\Entidades.dll
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\bin\Debug\netcoreapp3.1\Entidades.pdb
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csprojAssemblyReference.cache
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.Properties.Resources.resources
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.GenerateResource.cache
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CoreCompileInputs.cache
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfoInputs.cache
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.AssemblyInfo.cs
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.csproj.CopyComplete
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.dll
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.pdb
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.genruntimeconfig.cache
+C:\git\Repo 2021\tp_laboratorio_2\TP1\MiCalculadora\obj\Debug\netcoreapp3.1\MiCalculadora.FormCalculadora.resources

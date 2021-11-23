@@ -1,0 +1,12 @@
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\bin\Debug\net5.0\Entidades.deps.json
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\bin\Debug\net5.0\Entidades.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\bin\Debug\net5.0\Entidades.pdb
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.pdb
+F:\Utn\programacion 2\TP3\PanelloFaustoTP3\PanelloFausto2ATP3\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
